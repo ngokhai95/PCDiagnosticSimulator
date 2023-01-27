@@ -9,3 +9,5 @@ There are instrustions and debug LED to help guide you.
 Please note that the demo is really barebone and is just a quick showcase.
 
 You can download the demo in the release section.
+
+You can watch the video demo here: https://www.youtube.com/watch?v=BtpeB69uYDg
