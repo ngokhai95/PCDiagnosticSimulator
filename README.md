@@ -1,4 +1,4 @@
-# PCDiagnosticSimulator
+# PC Diagnostic Simulation
 
 Simulation game for learning to diagnose PC problems:
 
