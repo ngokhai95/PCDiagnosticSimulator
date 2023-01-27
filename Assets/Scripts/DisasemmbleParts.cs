@@ -147,10 +147,12 @@ public class DisasemmbleParts : MonoBehaviour
         if (debuglightsController.problemPart.name == chosenComponent.name)
         {
             Debug.Log(chosenComponent.name + " is fixed!");
+            intruction.SetText(chosenComponent.name + " is now fixed!");
             debuglightsController.problemPart = null;
         }
         else
         {
+            intruction.SetText(chosenComponent.name + " is not broken!");
             Debug.Log(chosenComponent.name + " is not broken!");
         }
     }
@@ -171,6 +173,8 @@ public class DisasemmbleParts : MonoBehaviour
     {
         int componentIndex = removedComponents.IndexOf(chosenComponent);
         chosenComponent.transform.position = componentsPosition[componentIndex];
+        removedComponents.Remove(chosenComponent);
+        componentsPosition.RemoveAt(componentIndex);
         camcontroller.ResetCam();
         removeButton.SetActive(true);
         repairButton.SetActive(false);
